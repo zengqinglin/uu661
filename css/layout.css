@@ -87,3 +87,8 @@
       .footer .logo-b, .footer .f-msg{ float: left; margin-top: 20px;}
       .footer .f-msg{ margin-left: 45px;}
       .f-msg p{ height: 20px; line-height: 20px;}
+
+      /*首页 hotlink*/
+      .hot-link li{ float: left; text-align: center; height: 140px; width:16.6%; }
+      .hot-link li a{ display: block;}
+      .hot-link li span{ height: 82px; width:82px; display: block; background: url(../images/bg-hotlink.png);}

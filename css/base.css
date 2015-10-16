@@ -4,7 +4,7 @@
     .l{float: left;}
     .r{ float: right;}
 
-    .text-primary{color:rgb(39,194,250);}
+    .text-primary{color:rgb(39,194,250) !important;}
     .text-alert{ color:rgb(219,88,60);}
     .uline{ text-decoration: underline;}
     body{ font:12px/18px "Microsoft Yahei",Aril; color:#777; background-color: #f6f6f6;}
@@ -24,7 +24,7 @@
     .aside{ width: 250px; height: 100%; float: left;}
     .conten{ width: 749px; height: 100%;  float: left; border-left:1px solid #e0e0e0;}
     /*首页内容区域*/
-    .h-content .news{ background-color: gray;}
+    .h-content .news{ }
     /*conten 布局开始*/
     .user-info{ height: 180px;}
     .safe-tools{ height: 140px; border-top: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0;}
@@ -108,3 +108,39 @@
 .log-block .vad{ margin-top: 12px; margin-bottom: 15px;}
 .log-block .f-pwd{ text-align: right; padding-right: 60px; }
 .vad-img{ padding-left: 15px; padding-right: 15px;}
+
+ /*首页 hotlink*/
+      .hot-link li{ float: left; text-align: center; height: 140px; width:16.6%;  }
+      .hot-link li a{ display: block; font-size: 18px;}
+      .hot-link li span{height: 82px; width:82px; margin: 10px auto; display: block; background: url(../images/bg-hotlink.png); transition:background-position 1s;}
+      .hot-link .item1 a:hover span{ background-position:0 -82px; }
+       .hot-link .item2 a span{ background-position: -82px 0;}
+        .hot-link .item2 a:hover span{ background-position: -82px -82px;}
+         .hot-link .item3 a span{ background-position: -164px 0;}
+        .hot-link .item3 a:hover span{ background-position: -164px -82px;}
+         .hot-link .item4 a span{ background-position: -246px 0;}
+        .hot-link .item4 a:hover span{ background-position: -246px -82px;}
+         .hot-link .item5 a span{ background-position: -328px 0;}
+        .hot-link .item5 a:hover span{ background-position: -328px -82px;}
+         .hot-link .item6 a span{ background-position: -410px 0;}
+        .hot-link .item6 a:hover span{ background-position: -410px -82px;}
+        .game{ display: block; width:325px;height:148px; position: relative; }
+        .game .hot{ position: absolute; left: 0; top: 0;}
+        /*新闻*/
+        .h-content .block{ background-image: linear-gradient(to right,rgb(245,245,245),rgb(240,240,240));}
+        .block h3{ width: 90%; margin:10px auto; border-left:4px solid rgb(39,194,250); height: 30px; line-height: 30px; font-size: 18px; padding-left: 15px; color: #333;}
+        .block h3 a{display: inline-block; float: right; font-size: 0.7em; }
+        .block ul{ width: 90%; margin: 0 auto; }
+        .block ul li{ height: 30px; line-height: 30px; border-bottom: 1px dashed #e0e0e0;}
+        .block ul li a{ display: block;}
+        .block ul li time{ display: block; float: right; color: #aaa;}
+        .block ul li span{ display: block; float: left; width: 190px; overflow: hidden; white-space: nowrap; -ms-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;text-overflow:ellipsis; color: #484848;}
+
+           .block ul li a:hover span{ color:rgb(39,194,250); text-decoration: underline; }
+           .job ul{ padding-left:120px; width: 180px; background: url(../images/h-job-bg.jpg) no-repeat left center; overflow: hidden;}
+          .h-content .job ul li{ width: 60px; float: left; padding-left: 10px; position: relative; *width:70px;*overflow: hidden;
+            }
+          .job ul li a{ width: 50px;}
+          .job ul li:before{ content: ""; width: 0; height: 0; display: inline-block; border:5px solid transparent; border-left-color:rgb(39,194,250); position: absolute; left: 0; top:12px;
+           }
+
